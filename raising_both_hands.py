@@ -269,7 +269,7 @@ def main(video_path: str, model_path: str) -> None:
     None
     """
     model = load_model(model_path)
-    capture = cv2.VideoCapture(0)
+    capture = cv2.VideoCapture(video_path)
 
     current_both_hands_people = 0
 
